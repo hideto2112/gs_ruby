@@ -10,7 +10,7 @@ end
 doc = Nokogiri::HTML.parse(html, nil, charset)
 
 doc.css('p.label').each do |title|
-    if (title.text == "INTERVIEW")
+    if title.text == "INTERVIEW"
         puts title.parent.css('.title').text
     end
 end
