@@ -20,6 +20,10 @@ class Department < ActiveRecord::Base
     belongs_to :companies
 end
 
+class Account < ActiveRecord::Base
+    belongs_to :companies
+end
+
 ActiveRecord::Base.establish_connection(
     adapter:    "mysql2",       # アダプター名
     host:       "localhost",    # ホスト名
