@@ -10,7 +10,7 @@ end
 doc = Nokogiri::HTML.parse(html, nil, charset)
 
 doc.css('a').each do |anchor|
-    if(anchor.css('.label').text == 'INTERVIEW')
+    if anchor.css('.label').text == 'INTERVIEW'
         puts anchor[:href]
     end
 end
