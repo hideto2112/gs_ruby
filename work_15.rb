@@ -5,12 +5,12 @@ ageRange    = 0..100
 genderArray = ["male", "female"]
 
 
-dataRange.each{ |num|
+dataRange.each do |num|
     gender = genderArray[rand(2)]
     age = rand(ageRange)
     User.create(
         gender: gender,
         age: age
     )
-}
+end
 
