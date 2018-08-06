@@ -1,0 +1,7 @@
+mysql> KILL 24;
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    25
+Current database: *** NONE ***
+
+ERROR 1094 (HY000): Unknown thread id: 24
