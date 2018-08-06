@@ -5,7 +5,7 @@ require 'sinatra'
 # end
 
 get '/' do
-    if params[:name] != nil
+    if !params[:name].nil?
         @name = params[:name] + 'さん'
     end
     erb :work_30
